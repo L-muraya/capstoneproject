@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Advert.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <title id="title">Shoe HUb</title>
+    <link rel="icon" href="./images/hub1.jpeg" />
+  
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo">
+        <h3><span>Shoe</span> Hub  <input type="text" name="search" placeholder="Search products "></i></h3>
+      </div>
+
+      <div id="navlinks">
+        <ul>
+          <li id="home"><a href="Advert.html.html">Home</a></li>
+          <li class="nav-hover"><a href="latest.html">Latest Drop</a</li>
+          <!-- <li class="nav-hover"><a href="brands.html">Brands</a></li> -->
+          <li class="nav-hover"><a href="log in.html"><img src="./images/person-fill (1).svg" width="30px"></i></a></li>
+          <!--<li class="nav-hover"><a href="Cart.html"> <i class="fa-solid fa-cart-shopping"></i></a><p id="count">0</p></li>-->
+
+         <!--div class="shopping-cart">--> 
+                    <div class="sum-prices">
+                        <!--Shopping cart logo-->
+                        <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                        <!--The total prices of products in the shopping cart -->
+                        <h6 id="sum-prices"></h6>
+                    </div>
+                </div>
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top">
+                        <button id="closeButton">
+                            <i class="fas fa-times-circle"></i>
+                        </button>
+                        <h3 style="color: green;">Cart</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">Your shopping cart is empty</h4>
+                           <!--<li class="buyItem">
+                                <img src="./images/hub4.jpg">
+                                <div>
+                                    <h5>Products Name</h5>
+                                    <h6>$199</h6>
+                                    <div>
+                                        <button>-</button>
+                                        <span class="countOfProduct">1</span>
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </li> -->
+                    </ul>
+                    <button class="btn checkout hidden">Check out</button>
+                </div>
+            </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <div id="section1">
+      <img height="650px" src="./images/hub1.jpeg" alt="Airmax Sneaker" />
+    <div id="slogan">
+      <h1><span>Grab</span> a pair with</h1>
+      <h1><span>Chrisi</span> offers! 20% off the price</h1>
+      <br /> 
+      <button class="buy">Let's shop</button>
+
+    </div>
+  </div>
+
+
+    <div id="section3">
+      <h1><span>Featured</span> products</h1>
+
+      <div id="trending">
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img  class="./latest drop/IMG-20230924-WA0005.jpg" src="./latest drop/IMG-20230924-WA0005.jpg" width="300px"  alt="female sneakers" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="converse">converse</h3>
+          <h3 class="$198">$198</h3>
+          <div class="buy-cart">
+            <button onclick="addtocart" class="buynow"  data-product-id="1">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hub5.jpg" width="300px" alt="female sneakers" class="prouct__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Converse</h3>
+          <h3 class="product__price">$178</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="2">Add to cart</button>
+          </div> 
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hub2.jpeg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Tom Hilfiger</h3>
+          <h3 class="product__price">$238</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="3">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img
+            src="./images/shoehub logo.jpg"
+            width="300px"
+            alt="female sneakers"
+            class="product__img"
+          />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Airmax 90</h3>
+          <h3 class="product__price">$798</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="4">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./latest drop/IMG-20230916-WA0005.jpg" width="300px" height="300px" alt="female sneakers"  class="product__img"/>
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Prada boots</h3>
+          <h3 class="product__price">$168</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="5">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hub6.jpg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Prada</h3>
+          <h3 class="product__price">$398</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="6">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hub3.jpeg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Gym sport</h3>
+          <h3 class="product__price">$348</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="7">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./latest drop/IMG-20230923-WA0008.jpg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Puma</h3>
+          <h3 class="product__price">$598</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="8">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hub9.jpg" width="300px" alt="female sneakers"  class="product__img"/>
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Nike Airforce</h3>
+          <h3 class="product__price">$558</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="9">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hub10.jpg" width="360px" height="300px"  alt="female sneakers"  class="product__img"/>
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star-half-empty"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Nike Airforce</h3>
+          <h3 class="product__price">$298</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="10">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hub11.jpg" width="300px" height="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Nike Airforce</h3>
+          <h3 class="product__price">$798</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="11">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hubf7.jpg" width="300px" alt="female sneakers" class="product__img"/>
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Heel Ankle boot</h3>
+          <h3 class="product__price">$598</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="12">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hubf5.jpg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+           <h3 class="product__name">Heel Ankle boot</h3>
+          <h3 class="product__price">$798</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="13">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hubf3.jpg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Strip Heels</h3>
+          <h3 class="product__price">$298</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="14">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hubf4.jpg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">open heels</h3>
+          <h3 class="product__price">$798</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="15">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./images/hubf8.jpg" width="300px" alt="female sneakers"  class="product__img"/>
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Strip heels</h3>
+          <h3 class="product__price">$765</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="16">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <img src="./images/hubf6.jpg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Open heels</h3>
+          <h3 class="product__price">$649</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="17">Add to cart</button>
+          </div>
+        </div>
+
+         <div class="t1">
+          <a href=""><i class="fa-solid fa fa-face-heart"></i></a>
+          <br />
+          <br />
+          <img src="./latest drop/IMG-20230916-WA0003.jpg" width="300px" alt="female sneakers" class="product__img" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <h3 class="product__name">Prada Boots</h3>
+          <h3 class="product__price">$238</h3>
+          <div class="buy-cart">
+            <button class="buynow"  data-product-id="18">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!--SECTION 4-->
+
+    <div id="section4">
+      <h1>Top <span> Reviews</span></h1>
+      <div id="review">
+        <div class="reviews">
+          <img src="./images/reviews1.webp" width="60px" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <br />
+          <p>
+            They offer fast delivery  and have<br /> favourable pprices for their products in addition their products are original
+          </p>
+        </div>
+
+        <div class="reviews">
+          <img src="./images/reviews2.webp" width="60px" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+          <br />
+          <br />
+          <p>
+           I happend to get my order wrong but shoe hud handled that  <br /> they offer easy returns and 24/7 client service
+          </p>
+        </div>
+
+        <div class="reviews">
+          <img src="./images/reviews3.webp" width="60px" />
+          <br />
+          <br />
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+          <br />
+          <br />
+          <p>
+            Iam a fashion addict and this happended to <br />my best online shop because they always have the latest drop in town.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="section5">
+      <h1><span>contact</span> us</h1>
+
+      <div class="form">
+        <input type="text" placeholder="Name" id="Name" />
+        <input type="email" placeholder="Email" id="Email" />
+        <input type="number" placeholder="Mobile no" id="Mobile no" />
+        <textarea
+          name=""
+          id="textarea"
+          cols="10"
+          rows="5"
+          placeholder="Your message"
+        ></textarea>
+        <button class="query"><a href=""> submit</a></button>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="logo">
+        <h1><span>Shoe</span>Hub</h1>
+      </div>
+
+      <div class="list">
+        <h2>services</h2>
+        <ul>
+          <li>Blog</li>
+          <li>Contact</li>
+          <li>Affliate</li>
+          <li>Work</li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <h2>pages</h2>
+        <ul>
+          <li>About</li>
+          <li>Privacy policy</li>
+          <li>Terms and condition</li>
+          <li>Disclaimer</li>
+        </ul>
+      </div>
+
+      <div class="list" id="social">
+        <h2>Follow us on</h2>
+        <ul>
+          <li><i class="fab fa-youtube"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+        </ul>
+      </div>
+    </div>
+    <script src="cartF.js"></script>
+    <script src="add.js"></script>
+  </body>
+</html>
